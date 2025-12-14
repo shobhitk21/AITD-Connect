@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================
+   DESIGN TOKENS (LIGHT MODE)
+================================ */
+@layer base {
+  :root {
+    /* Background & Text */
+    --background: 240 4% 96%;
+    --foreground: 240 10% 12%;
+
+    /* Cards / Popovers */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 12%;
+
+    --popover: 240 5% 92%;
+    --popover-foreground: 240 10% 12%;
+
+    /* Primary */
+    --primary: 258 89% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary */
+    --secondary: 240 5% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted */
+    --muted: 240 4% 88%;
+    --muted-foreground: 240 8% 35%;
+
+    /* Accent */
+    --accent: 269 100% 66%;
+    --accent-foreground: 258 70% 30%;
+
+    /* Destructive */
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 85% 97%;
+
+    /* Borders / Inputs */
+    --border: 240 4% 80%;
+    --input: 240 4% 80%;
+    --ring: 258 89% 60%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 240 10% 12%;
+    --sidebar-primary: 258 89% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 5% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 240 4% 80%;
+    --sidebar-ring: 258 89% 60%;
+
+    /* Charts */
+    --chart-1: 255 91% 76%;
+    --chart-2: 270 95% 75%;
+    --chart-3: 234 89% 73%;
+    --chart-4: 258 89% 60%;
+    --chart-5: 240 3% 46%;
+
+    /* Fonts */
+    --font-sans: 'Montserrat', ui-sans-serif, system-ui;
+    --font-serif: 'Cormorant Garamond', ui-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace;
+  }
+
+  /* ================================
+     DARK MODE
+  ================================ */
+  .dark {
+    --background: 240 5% 10%;
+    --foreground: 0 0% 100%;
+
+    --card: 240 3% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 5% 22%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 255 91% 76%;
+    --primary-foreground: 240 5% 10%;
+
+    --secondary: 240 3% 46%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3% 30%;
+    --muted-foreground: 240 5% 75%;
+
+    --accent: 273 86% 20%;
+    --accent-foreground: 270 95% 75%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 85% 97%;
+
+    --border: 240 5% 33%;
+    --input: 240 5% 33%;
+    --ring: 255 91% 76%;
+
+    --sidebar-background: 240 5% 10%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 255 91% 76%;
+    --sidebar-primary-foreground: 240 5% 10%;
+    --sidebar-accent: 270 95% 75%;
+    --sidebar-accent-foreground: 240 5% 10%;
+    --sidebar-border: 240 5% 33%;
+    --sidebar-ring: 255 91% 76%;
+  }
+}
+
+/* ================================
+   BASE STYLES
+================================ */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Headings always readable */
+  h1, h2, h3, h4, h5, h6 {
+    color: hsl(var(--foreground)) !important;
+    font-weight: 600;
+    opacity: 1 !important;
+  }
+
+  /* Paragraphs */
+  p {
+    color: hsl(var(--foreground)) !important;
+    opacity: 1 !important;
+  }
+
+  /* Fix muted text invisibility */
+  .text-muted,
+  .text-muted-foreground {
+    color: hsl(var(--muted-foreground)) !important;
+    opacity: 1 !important;
+  }
+
+  /* Fix subtitle under main headings (About AITD issue) */
+  h1 + p,
+  h2 + p,
+  .page-subtitle,
+  .about-subtitle {
+    color: hsl(var(--foreground)) !important;
+    opacity: 1 !important;
+  }
+
+  /* Fix button / sidebar hover & selected dimming */
+  button,
+  button:hover,
+  button:active,
+  button:focus-visible,
+  button[data-state="active"],
+  button[aria-selected="true"] {
+    opacity: 1 !important;
+  }
+
+  /* Sidebar selected button */
+  button[data-state="active"],
+  button[aria-selected="true"] {
+    background-color: hsl(var(--accent)) !important;
+    color: hsl(var(--foreground)) !important;
+  }
+}
