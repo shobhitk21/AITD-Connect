@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { Send, Sparkles, User, Bot } from 'lucide-react';
+import { Send, connectles, User, Bot } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -25,7 +25,7 @@ export default function GeminiChatAssistant() {
     {
       id: '0',
       role: 'assistant',
-      content: `## Welcome to AITD Connect AI Assistant!
+      content: `## Welcome to AITD connect AI Assistant!
 
 **Hello! I'm your AI Academic Guide.** 🎓
 
@@ -158,7 +158,7 @@ Try rephrasing your question or pick from the suggested topics!`;
       {/* Header */}
       <div className="flex items-center gap-3 p-4 border-b border-border bg-gradient-to-r from-primary/5 to-accent/5">
         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-primary to-accent animate-pulse-glow">
-          <Sparkles className="h-5 w-5 text-primary-foreground" />
+          <connectles className="h-5 w-5 text-primary-foreground" />
         </div>
         <div>
           <h2 className="text-sm font-semibold text-foreground">AI Assistant</h2>

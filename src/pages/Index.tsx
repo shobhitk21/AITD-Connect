@@ -1,9 +1,9 @@
-import { ArrowRight, Sparkles, Users, BookOpen, Trophy, Zap } from "lucide-react";
+import { ArrowRight, connectles, Users, BookOpen, Trophy, Zap } from "lucide-react";
 
 const Index = () => {
   const features = [
     {
-      icon: <Sparkles className="w-6 h-6" />,
+      icon: <connectles className="w-6 h-6" />,
       title: "Innovation Hub",
       description: "Cutting-edge technology and research initiatives driving the future of education"
     },
@@ -53,14 +53,14 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-          Welcome to <span className="text-blue-600">AITD SPARK</span>
+          Welcome to <span className="text-blue-600">AITD Connect</span>
         </h1>
         <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
           Empowering education through innovative digital solutions. 
           Experience the future of learning with our comprehensive platform.
         </p>
         <a 
-          href="https://aitd-spark.lovable.app/" 
+          href="https://aitd-connect.onrender.com/dashboard" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
@@ -99,7 +99,7 @@ const Index = () => {
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">
-            Why Choose AITD SPARK?
+            Why Choose AITD Connect?
           </h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
@@ -124,17 +124,17 @@ const Index = () => {
           Ready to Get Started?
         </h2>
         <p className="text-lg text-slate-600 mb-8">
-          Join the future of education with AITD SPARK today
+          Join the future of education with AITD Connect today
         </p>
-        <a 
-          href="https://aitd-spark.lovable.app/" 
+        {/* <a 
+          href="https://aitd-connect.lovable.app/" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-slate-800 transition-colors"
         >
           Access Platform
           <ArrowRight className="w-5 h-5" />
-        </a>
+        </a> */}
       </section>
 
       {/* Footer */}

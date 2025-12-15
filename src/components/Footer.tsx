@@ -15,7 +15,7 @@ export default function Footer() {
               </div>
               <div>
                 <span className="text-lg font-bold text-foreground">AITD</span>
-                <span className="text-lg font-medium text-accent"> Connect</span>
+                <span className="text-lg font-medium text-accent"> connect</span>
               </div>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
@@ -105,7 +105,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-muted-foreground text-center md:text-left">
-              © {new Date().getFullYear()} AITD Connect. All rights reserved.
+              © {new Date().getFullYear()} AITD connect. All rights reserved.
             </p>
             <p className="text-xs text-muted-foreground text-center md:text-right max-w-xl">
               <strong>Disclaimer:</strong> This is a high-fidelity demo project using static data and simulated AI responses for academic and accessibility UI demonstration purposes only. All college details are sourced from the AITD official website.

@@ -1,4 +1,4 @@
-// Dummy Data for AITD Connect Portal
+// Dummy Data for AITD connect Portal
 
 export interface Resource {
   id: string;
@@ -615,7 +615,7 @@ A **deadlock** is a situation where processes are blocked forever, each waiting 
   },
   {
     keywords: ['hello', 'hi', 'help', 'what can you do'],
-    response: `## Welcome to AITD Connect AI Assistant!
+    response: `## Welcome to AITD connect AI Assistant!
 
 **Hello! I'm Gemini, your AI Academic Guide.** 🎓
 

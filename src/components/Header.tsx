@@ -34,7 +34,7 @@ export default function Header() {
             </div>
             <div className="hidden sm:block">
               <span className="text-lg font-bold text-foreground">AITD</span>
-              <span className="text-lg font-medium text-accent"> Connect</span>
+              <span className="text-lg font-medium text-accent"> connect</span>
             </div>
           </Link>
 
