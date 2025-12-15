@@ -59,7 +59,7 @@ const Index = () => {
           Empowering education through innovative digital solutions. 
           Experience the future of learning with our comprehensive platform.
         </p>
-        <a 
+        {/* <a 
           href="https://aitd-connect.onrender.com/dashboard" 
           target="_blank" 
           rel="noopener noreferrer"
@@ -67,7 +67,7 @@ const Index = () => {
         >
           Launch Platform
           <ArrowRight className="w-5 h-5" />
-        </a>
+        </a> */}
       </section>
 
       {/* Features Grid */}
